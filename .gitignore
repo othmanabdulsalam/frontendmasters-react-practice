@@ -1,0 +1,10 @@
+node_modules
+# parcel cache
+.cache/
+# executables 
+dist/
+# other files we defo don't want to commit changes of
+.env
+.DS_Store
+coverage/
+.vscode/
