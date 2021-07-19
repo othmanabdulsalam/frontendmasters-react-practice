@@ -4,7 +4,10 @@ import Pet from "./Pet";
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
-
+/**
+ * 
+ * @returns 
+ */
 const SearchParams = () =>
 {
     const defLocation = "Place";
