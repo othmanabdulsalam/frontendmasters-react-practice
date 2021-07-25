@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Practicing developing web applications with React Framework",
   "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
-  },
   "keywords": [],
   "author": "Othman Abdulsalam",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-react": "^7.12.13",

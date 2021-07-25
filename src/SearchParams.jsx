@@ -63,7 +63,7 @@ const SearchParams = () =>
                         onChange={(e) => updateAnimal(e.target.value)}
                         onBlur={(e) => updateAnimal(e.target.value)}
                     >
-                        <option></option>
+                        <option value="">Animal</option>
                         {ANIMALS.map((animal) => (
                             <option key={animal} value={animal}>
                                 {animal}
@@ -80,7 +80,7 @@ const SearchParams = () =>
                         onChange={(e) => updateBreed(e.target.value)}
                         onBlur={(e) => updateBreed(e.target.value)}
                     >
-                        <option></option>
+                        <option value="">Breed</option>
                         {breeds.map((breed) => (
                             <option key={breed} value={breed}>
                                 {breed}
