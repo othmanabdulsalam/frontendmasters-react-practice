@@ -14,8 +14,7 @@ const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
  */
 const SearchParams = () =>
 {
-    const defLocation = "Place";
-    const [location, setLocation] = useState(defLocation);
+    const [location, setLocation] = useState("");
     const [animal, updateAnimal] = useState("");
     const [breed, updateBreed] = useState("");
     const [breeds] = useBreedList(animal);
