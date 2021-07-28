@@ -10,6 +10,16 @@ class Carousel extends Component
         images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
     };
 
+    // event handler for changing selected images 
+    handleIndexClick = (event) =>
+    {
+        this.setState({
+            // +event vs event means smaller image stays highlighted when displayed on bigger canvas
+            // turns the string into number, equivalent to 0 + event
+            active: +event.target.dataset.index
+        });
+    };
+
     render()
     {
         const { active } = this.state;
@@ -23,6 +33,8 @@ class Carousel extends Component
                         <img
                             key={photo}
                             src={photo}
+                            data-index={index}
+                            onClick={this.handleIndexClick}
                             className={index === active ? "active" : ""}
                             alt="animal thumbnail"
                         />
