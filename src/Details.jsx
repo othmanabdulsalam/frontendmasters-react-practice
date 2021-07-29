@@ -23,8 +23,11 @@ class Details extends Component
     toggleModal = () => this.setState({ showModal: !this.state.showModal });
     adopt = () => (window.location = "http://bit.ly/pet-adopt");
 
+
     render()
     {
+
+        throw new Error("haha");
         if (this.state.loading)
         {
             return <h2>loading … </h2>;
@@ -38,8 +41,6 @@ class Details extends Component
             images,
             showModal
         } = this.state;
-
-
         return (
             <div className="details">
                 <Carousel images={images} />
@@ -73,7 +74,7 @@ class Details extends Component
 
 const DetailsWithRouter = withRouter(Details);
 
-export default function DetaislWithErrorBoundary()
+export default function DetailsErrorBoundary()
 {
     return (
         <ErrorBoundary>
